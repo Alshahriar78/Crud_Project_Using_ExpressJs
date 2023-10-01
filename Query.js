@@ -1,7 +1,7 @@
-user('DataBaseName')
+use('DataBaseName')
 db.createCollection('NewCollection');//Create a NewCollection in DataBaseName  
 
-user('DataBaseName')
+use('DataBaseName')
 //Inserts a single document into a collection.
 db.NewCollection.insertOne({
     "Name":"Al Shahoriar",  
@@ -10,11 +10,11 @@ db.NewCollection.insertOne({
     "City":"Bogura",
 })
 
-user('DataBaseName')
+use('DataBaseName')
 // Delete/remove a single document from the collection.
 db.NewCollection.deleteOne({
    "Name":"Al Shahoriar"
 })
 
-user('DataBaseName')
+use('DataBaseName')
 db.NewCollection.drop(); //Removes the collection from the DataBaseName in  database.
